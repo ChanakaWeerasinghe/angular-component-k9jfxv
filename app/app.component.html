@@ -1,0 +1,8 @@
+<!-- [parentCount]="count" 
+[parentTimerCount]="timerCount" -->
+
+<div *ngFor="let biblCit of biblCits">
+	<child-component [parentTimerCount]="biblCit">
+	</child-component>
+</div>
+<button (click)="add()">Parent Add</button>
